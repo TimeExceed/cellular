@@ -1,0 +1,5 @@
+.sconsign.dblite
+go
+build/
+*.jar
+*.zip
