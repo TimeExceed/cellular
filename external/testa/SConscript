@@ -1,0 +1,4 @@
+# -*- python -*-
+Import('env')
+
+env.Install('$BUILD_DIR/test/testa/', 'core.clj')

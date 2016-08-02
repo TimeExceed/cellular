@@ -1,0 +1,6 @@
+# -*- python -*-
+Import('env')
+
+clj = env.download('clojure-1.8.0.jar',
+    'http://search.maven.org/remotecontent?filepath=org/clojure/clojure/1.8.0/clojure-1.8.0.jar')
+env.Install('$LIB_DIR', clj)

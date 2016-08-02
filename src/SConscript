@@ -1,0 +1,5 @@
+# -*- python -*-
+Import('env')
+
+jar = env.jar('cellular.jar', [env.Dir('cellular')])
+jar = env.Install('$LIB_DIR', jar)

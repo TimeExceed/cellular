@@ -1,0 +1,8 @@
+# -*- python -*-
+Import('env')
+
+jar = env.jar('cellular_test.jar',
+    [env.Dir('cellular'), env.Dir('testa')])
+jar = env.Install('$BIN_DIR', jar)
+env.Depends(jar, '$LIB_DIR/cellular.jar')
+env.Alias('TEST', jar)
